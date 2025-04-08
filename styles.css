@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.hero-content {
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-content:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero h1 span {
+    color: #007BFF;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Hero Image */
+.hero-image {
+    max-width: 350px;
+    margin-left: 40px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+    .hero-image {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
