@@ -3,107 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand - Visual Designer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #000;
-        }
-        
-        .hero {
-            margin-bottom: 50px;
-        }
-        
-        .services {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .services span {
-            padding-right: 10px;
-            border-right: 1px solid #000;
-        }
-        
-        .services span:last-child {
-            border-right: none;
-        }
-        
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        
-        .description {
-            max-width: 600px;
-            margin-bottom: 50px;
-            line-height: 1.5;
-        }
-        
-        .contact {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">Brand</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
     </header>
-    
-    <main>
-        <div class="hero">
+    <main class="text-content">
+        <div class="text-content">
             <div class="services">
-                <span>Branding</span>
-                <span>Image Making</span>
+                <span>Web Development</span>
+                <span>Photography</span>
             </div>
-            <h1>Visual Designer</h1>
-            <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed molestiae vero explicabo, expedita
-                aspernatur tenetur asperiores quis necessitatibus cum, rerum quae quod sit? Consequuntur quo
-                officiis vel sequi, mollitia consequatur.
-            </p>
-            <div class="contact">Contact</div>
+            <h1>EZIRIM KINGDOM</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam optio enim veniam. Quo corrupti culpa ipsum ipsa fuga ea facere tempore voluptates, itaque, accusantium praesentium. Quasi odio culpa expedita est!</p>
+            <a href="https://ezirimkingdom.com.ng">Contact Me!</a>
         </div>
-    </main>
+
+        <div class="image-content">
+            <div class="image-placeholder">
+                <img src="images/img1.jpg" alt="ProfilePicture">
+            </div>
+        </div>
+    </div>
+    </main>   
 </body>
 </html>
